@@ -1,0 +1,12 @@
+name: Continuous Integration
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test-workflow:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update cache
+        run: echo "build finished"
